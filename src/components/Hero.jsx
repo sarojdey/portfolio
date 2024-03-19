@@ -6,7 +6,7 @@ import { IoRocketSharp } from "react-icons/io5";
 function Hero() {
   return (
     <>
-      <div className="flex flex-col mx-4 font-font1 font-black text-5xl md:text-8xl md:mx-9 bg-gradient-to-r from-blue2 to-blue1  text-transparent bg-clip-text mt-32">
+      <div className="flex flex-col mx-4 font-font1 font-black text-5xl md:text-8xl md:mx-9 bg-gradient-to-r from-blue2 to-blue1  text-transparent bg-clip-text mt-32 md:mt-24">
         <span>I MAKE</span>
         <span>WEBSITES.</span>
       </div>
