@@ -31,7 +31,9 @@ function Navbar() {
       ) : (
         <nav className="md:mr-10 md:mt-6 mr-4 mt-3 font-medium font-font2 ">
           <ul className="flex list-none justify-center items-center  ">
-            <li className="mx-6 cursor-pointer">Let's talk</li>
+            <li className="mx-6  cursor-pointer flex justify-center items-center border-white border-solid border-2 bg-black py-2 px-5 rounded-md bg-opacity-10 hover:bg-blue2  hover:border-blue2 hover:-translate-y-0.5 transition-all duration-300 ease-in-out">
+              Let's talk
+            </li>
             <li className="mx-2  text-4xl cursor-pointer ">
               <IoMenu />
             </li>
