@@ -13,33 +13,33 @@ function Hero() {
       <div className="flex flex-col md:flex-row justify-between w-full mt-16">
         <div className="flex flex-col w-full md:w-1/3 py-5 pl-7 pr-4  md:pr-0 md:pl-10 md:py-10">
           <FaGraduationCap className="text-5xl mb-3 text-textblue" />
-          <span className="text-2xl leading-10 mb-3  ">Lorem ipsum</span>
+          <span className="text-2xl leading-10 mb-3  ">Education</span>
           <span className="text-md leading-7 text-textgrey">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Voluptate,
-            nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur, minima!
+            I hold a Bachelor's degree in Computer Science and Engineering,
+            which significantly enriched my understanding of computer science
+            fundamentals. This coursework spanned topics such as data
+            structures, algorithms, operating systems, compiler design, and
+            database management systems.
           </span>
         </div>
         <div className="flex flex-col w-full md:w-1/3 py-5 pl-7 pr-4 md:pr-0 md:pl-10 md:py-10">
           <FaHammer className="text-5xl mb-3 text-textblue" />
-          <span className="text-2xl leading-10 mb-3">
-            Lorem ipsum 
-          </span>
+          <span className="text-2xl leading-10 mb-3">Skills</span>
           <span className="text-md leading-7 text-textgrey">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
-            nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptas, aspernatur?
+            In addition to my college curriculum, I have acquired proficiency in
+            various web development technologies. I excel in Java, JavaScript,
+            React.js, Node.js, Express.js, and other popular frameworks. My
+            primary focus is on working with the MERN stack.
           </span>
         </div>
         <div className="flex flex-col w-full md:w-1/3 py-5 pl-7 pr-4  md:pr-0 md:pl-10 md:py-10">
           <IoRocketSharp className="text-5xl mb-3 text-textblue" />
-          <span className="text-2xl leading-10 mb-3">
-            Lorem ipsum 
-          </span>
+          <span className="text-2xl leading-10 mb-3">Projects</span>
           <span className="text-md leading-7 text-textgrey">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
-            nihil. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Dolores, id?
+            I have completed several projects to enhance my skills. These
+            include developing an e-commerce website with modern features,
+            creating a movie database that utilizes the TMDB API in the backend,
+            and designing this portfolio website.
           </span>
         </div>
       </div>

@@ -2,7 +2,7 @@ import { IoMenu } from "react-icons/io5";
 function Navbar() {
   return (
     <header className="flex justify-between items-center ">
-      <h1 className=" md:ml-10 md:mt-6 text-4xl font-bold ml-4 mt-3 font-font1 cursor-pointer   ">
+      <h1 className=" md:ml-10 md:mt-6 text-5xl font-bold ml-4 mt-3 font-font1 cursor-pointer   ">
         SRJ.
       </h1>
 
