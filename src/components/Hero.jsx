@@ -11,7 +11,7 @@ function Hero() {
         <span>WEBSITES.</span>
       </div>
       <div className="flex flex-col md:flex-row justify-between w-full mt-16">
-        <div className="flex flex-col w-full md:w-1/3 py-5 pl-7 pr-4  md:pr-0 md:pl-10 md:py-10">
+        <div className="flex flex-col w-full md:w-1/3 py-5 pl-7 pr-4  md:pr-5 md:pl-10 md:py-10">
           <FaGraduationCap className="text-5xl mb-3 text-textblue" />
           <span className="text-2xl leading-10 mb-3  ">Education</span>
           <span className="text-md leading-7 text-textgrey">
@@ -22,7 +22,7 @@ function Hero() {
             database management systems.
           </span>
         </div>
-        <div className="flex flex-col w-full md:w-1/3 py-5 pl-7 pr-4 md:pr-0 md:pl-10 md:py-10">
+        <div className="flex flex-col w-full md:w-1/3 py-5 pl-7 pr-4 md:pr-5 md:pl-10 md:py-10">
           <FaHammer className="text-5xl mb-3 text-textblue" />
           <span className="text-2xl leading-10 mb-3">Skills</span>
           <span className="text-md leading-7 text-textgrey">
@@ -32,7 +32,7 @@ function Hero() {
             primary focus is on working with the MERN stack.
           </span>
         </div>
-        <div className="flex flex-col w-full md:w-1/3 py-5 pl-7 pr-4  md:pr-0 md:pl-10 md:py-10">
+        <div className="flex flex-col w-full md:w-1/3 py-5 pl-7 pr-4  md:pr-5 md:pl-10 md:py-10">
           <IoRocketSharp className="text-5xl mb-3 text-textblue" />
           <span className="text-2xl leading-10 mb-3">Projects</span>
           <span className="text-md leading-7 text-textgrey">
