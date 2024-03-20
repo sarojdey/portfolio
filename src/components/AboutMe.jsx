@@ -30,7 +30,7 @@ function AboutMe() {
               5+
             </span> */}
             <div className=" flex justify-evenly w-80 h-12 my-3 ">
-              <div className="aspect-square h-full bg-green-500 rounded-sm">.</div>
+              <div className="w-1/6 aspect-square bg-green-500 rounded-sm">.</div>
               <div className="aspect-square bg-green-500 rounded-sm">2</div>
               <div className="aspect-square bg-green-500 rounded-sm">3</div>
               <div className="aspect-square bg-green-500 rounded-sm">4</div>
