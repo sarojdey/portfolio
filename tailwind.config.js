@@ -17,6 +17,16 @@ export default {
         textblue: "#0299ed",
         textgrey: "#92959f",
       },
+      height: {
+        h1: "43rem",
+        h2: "33rem",
+        h1x:"38rem",
+        h2x:"28rem",
+      },
+      width: {
+        w1: "30rem",
+        w2: "20rem",
+      },
     },
   },
   plugins: [],
