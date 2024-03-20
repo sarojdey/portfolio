@@ -30,11 +30,11 @@ function AboutMe() {
               5+
             </span> */}
             <div className=" flex justify-evenly w-80 h-12 my-3 ">
-              <div className="w-1/6 aspect-square bg-green-500 rounded-sm">.</div>
-              <div className="aspect-square bg-green-500 rounded-sm">2</div>
-              <div className="aspect-square bg-green-500 rounded-sm">3</div>
-              <div className="aspect-square bg-green-500 rounded-sm">4</div>
-              <div className="aspect-square  bg-textwhite rounded-sm">5</div>
+              <div className="w-1/6 aspect-square bg-green-500 rounded-sm"></div>
+              <div className="w-1/6 aspect-square bg-green-500 rounded-sm"></div>
+              <div className="w-1/6 aspect-square bg-green-500 rounded-sm"></div>
+              <div className="w-1/6 aspect-square bg-green-500 rounded-sm"></div>
+              <div className="w-1/6 aspect-square  bg-textwhite rounded-sm"></div>
             </div>
           </div>
           <div
@@ -46,11 +46,11 @@ function AboutMe() {
               10+
             </span> */}
             <div className=" flex justify-evenly w-64 h-10 my-3 ">
-              <div className="aspect-square bg-yellow-500 rounded-sm"></div>
-              <div className="aspect-square bg-yellow-500 rounded-sm"></div>
-              <div className="aspect-square bg-yellow-500 rounded-sm"></div>
-              <div className="aspect-square bg-textwhite rounded-sm"></div>
-              <div className="aspect-square bg-textwhite rounded-sm"></div>
+              <div className="w-1/6 aspect-square bg-yellow-500 rounded-sm"></div>
+              <div className="w-1/6 aspect-square bg-yellow-500 rounded-sm"></div>
+              <div className="w-1/6 aspect-square bg-yellow-500 rounded-sm"></div>
+              <div className="w-1/6 aspect-square bg-textwhite rounded-sm"></div>
+              <div className="w-1/6 aspect-square bg-textwhite rounded-sm"></div>
             </div>
           </div>
           <div
@@ -62,11 +62,11 @@ function AboutMe() {
               1+
             </span> */}
             <div className=" flex justify-evenly w-52 h-8 my-3 ">
-              <div className="aspect-square bg-orange-500 rounded-sm"></div>
-              <div className="aspect-square bg-orange-500 rounded-sm"></div>
-              <div className="aspect-square bg-textwhite rounded-sm"></div>
-              <div className="aspect-square bg-textwhite rounded-sm"></div>
-              <div className="aspect-square bg-textwhite rounded-sm"></div>
+              <div className="w-1/6 aspect-square bg-orange-500 rounded-sm"></div>
+              <div className="w-1/6 aspect-square bg-orange-500 rounded-sm"></div>
+              <div className="w-1/6 aspect-square bg-textwhite rounded-sm"></div>
+              <div className="w-1/6 aspect-square bg-textwhite rounded-sm"></div>
+              <div className="w-1/6 aspect-square bg-textwhite rounded-sm"></div>
             </div>
           </div>
         </div>
