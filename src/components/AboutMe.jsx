@@ -18,7 +18,7 @@ function AboutMe() {
           alteration in some form majority.
         </span>
        </div>
-        <div className="flex justify-between mt-12 ">
+        <div className="flex justify-between mt-10 ">
           <div
             className="flex
             flex-col "
