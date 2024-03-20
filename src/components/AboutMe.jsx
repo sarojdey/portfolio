@@ -10,9 +10,9 @@ function AboutMe() {
       <div className=" h-h2x w-w2 md:h-h1x md:w-w1 "></div>
       <div className="h-h2x lg: md:h-h1x w-full md:w-1/2">
        <div className="flex flex-col">
-       <span className="pb-6">About Us</span>
-        <span className="pb-6">Save your time by using Trydo and present yours.</span>
-        <span className="pb-6"> 
+       <span className="pb-6  text-textblue ">ABOUT ME</span>
+        <span className="pb-6 font-font1 text-3xl font-bold text-textwhite leading-10">Save your time by using Trydo and present yours.</span>
+        <span className="pb-6 leading-7 text-textgrey"> 
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form. have suffered
           alteration in some form majority.
@@ -23,22 +23,22 @@ function AboutMe() {
             className="flex
             flex-col"
           >
-            <span>Awards</span>
-            <span>800+</span>
+            <span className="text-textblue">Awards</span>
+            <span className="text-textblue font-font1 text-3xl font-bold">800+</span>
           </div>
           <div
             className="flex
             flex-col"
           >
-            <span>Happy Client</span>
-            <span>1200+</span>
+            <span className="text-textblue">Happy Client</span>
+            <span className="text-textblue font-font1 text-3xl font-bold">1200+</span>
           </div>
           <div
             className="flex
             flex-col"
           >
-            <span>YEARS OF EXPERIENCE</span>
-            <span>12+</span>
+            <span className="text-textblue">EXPERIENCE</span>
+            <span className="text-textblue font-font1 text-3xl font-bold">12+</span>
           </div>
         </div>
       </div>
