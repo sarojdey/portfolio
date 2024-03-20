@@ -8,9 +8,9 @@ function AboutMe() {
         <img src={img} alt="image" className=" h-full w-full object-cover" />
       </div>
       <div className=" h-h2x w-w2 md:h-h1x md:w-w1 "></div>
-      <div className="h-h2x lg: md:h-h1x w-full md:w-1/2">
+      <div className="h-h2x md:h-h1x w-full md:w-1/2">
        <div className="flex flex-col">
-       <span className="pb-6  text-textblue ">ABOUT ME</span>
+       <span className="pb-6 text-textblue ">ABOUT ME</span>
         <span className="pb-6 font-font1 text-3xl font-bold text-textwhite leading-10">Save your time by using Trydo and present yours.</span>
         <span className="pb-6 leading-7 text-textgrey"> 
           There are many variations of passages of Lorem Ipsum available, but
@@ -18,10 +18,10 @@ function AboutMe() {
           alteration in some form majority.
         </span>
        </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between mt-12 ">
           <div
             className="flex
-            flex-col"
+            flex-col "
           >
             <span className="text-textblue">Awards</span>
             <span className="text-textblue font-font1 text-3xl font-bold">800+</span>
