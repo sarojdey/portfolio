@@ -10,13 +10,13 @@ function Navbar() {
       <nav className="mr-4 mt-3 font-font2 font-medium md:mr-10 md:mt-6 ">
         <ul className="flex list-none items-center ">
           <li className="mx-6 hidden cursor-pointer transition-all duration-300 ease-in-out hover:text-blue2 md:block">
-            Home
-          </li>
-          <li className=" mx-6 hidden cursor-pointer transition-all duration-300 ease-in-out hover:text-blue2 md:block">
             About
           </li>
+          <li className=" mx-6 hidden cursor-pointer transition-all duration-300 ease-in-out hover:text-blue2 md:block">
+            Projects
+          </li>
           <li className="mx-6 hidden cursor-pointer transition-all  duration-300 ease-in-out hover:text-blue2 md:block">
-            Blog
+            Blogs
           </li>
           <a
             href="mailto: sarojkumardey.mail@gmail.com?subject=Let's collaborate."

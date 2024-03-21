@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa";
 function Projects() {
   return (
     // wrapper
-    <div className="pt-10">
+    <div className="py-20">
       {/* sec1 */}
       <div className="flex flex-col items-center p-5">
         <span className=" pb-6 text-center text-textblue">MY BEST WORKS</span>
