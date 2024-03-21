@@ -10,7 +10,9 @@ function AboutMe() {
       <div className=" h-h2x w-w2 md:h-h1x md:w-w1 "></div>
       <div className=" w-full md:h-h1x md:w-1/2">
         <div className="flex flex-col">
-          <span className="pb-6 text-textblue ">ABOUT ME</span>
+          <span className="pb-6 text-textblue " id="about">
+            ABOUT ME
+          </span>
           <span className="pb-6 font-font1 text-4xl font-bold leading-10 text-textwhite">
             Hey there! I'm Saroj, a passionate web developer.
           </span>

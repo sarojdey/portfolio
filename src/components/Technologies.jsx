@@ -14,7 +14,7 @@ import { FaJava } from "react-icons/fa";
 
 function Technologies() {
   return (
-    <div className="w-full bg-black1 py-20">
+    <div className="w-full bg-black1 pb-20 pt-20 md:pb-32">
       <div className="flex flex-col items-center p-5">
         <span className=" pb-6 text-center text-textblue">MY STACKS</span>
         <span className=" pb-6 text-center font-font1 text-4xl font-bold leading-10 text-textwhite">
