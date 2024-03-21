@@ -8,7 +8,7 @@ function Footer() {
     <div className="overflow-hidden">
       <div className="flex flex-col md:flex-row">
         <div className="relative h-h2 w-full md:w-1/2">
-          <div className="absolute z-10 flex h-h1 w-full flex-col items-center justify-center">
+          <div className="absolute z-10 flex h-h2 w-full flex-col items-center justify-center">
             <div className="flex h-2/3 w-2/3 flex-col">
               <span className="text-md pb-6 font-font2 font-medium tracking-widest">
                 READY TO DO THIS
