@@ -2,6 +2,9 @@ import React from "react";
 import { FaGraduationCap } from "react-icons/fa6";
 import { FaHammer } from "react-icons/fa6";
 import { IoRocketSharp } from "react-icons/io5";
+import { FaFilePdf } from "react-icons/fa";
+
+import resume from "../assets/sarojkumardey.pdf";
 
 function Hero() {
   return (
@@ -10,6 +13,7 @@ function Hero() {
         <span>I MAKE</span>
         <span>WEBSITES.</span>
       </div>
+
       <div className="mt-16 flex w-full flex-col justify-between md:flex-row">
         <div className="flex w-full flex-col py-5 pl-7 pr-4 md:w-1/3  md:py-10 md:pl-10 md:pr-5">
           <FaGraduationCap className="mb-3 text-5xl text-textblue" />
@@ -43,6 +47,15 @@ function Hero() {
           </span>
         </div>
       </div>
+      <a
+        href={resume}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="  mx-4 mt-10 flex h-14 w-60 cursor-pointer items-center justify-center rounded-md border-2 border-solid border-white bg-black bg-opacity-10  px-5 py-2 transition-all duration-300  ease-in-out hover:-translate-y-0.5 hover:border-blue2 hover:bg-blue2 md:mx-10 "
+      >
+        <FaFilePdf className="mr-3 text-2xl " />
+        <span>Download Resume</span>
+      </a>
     </>
   );
 }
