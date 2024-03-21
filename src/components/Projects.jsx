@@ -10,8 +10,8 @@ function Projects() {
     <div className="pt-10">
       {/* sec1 */}
       <div className="flex flex-col items-center p-5">
-        <span className=" pb-6 text-textblue text-center">MY BEST WORKS</span>
-        <span className=" text-center pb-6 font-font1 text-4xl font-bold text-textwhite leading-10">
+        <span className=" pb-6 text-center text-textblue">MY BEST WORKS</span>
+        <span className=" pb-6 text-center font-font1 text-4xl font-bold leading-10 text-textwhite">
           Bringing Ideas to Life
         </span>
         <span className="pb-6 text-center leading-7 text-textgrey">
@@ -21,35 +21,35 @@ function Projects() {
         </span>
       </div>
       {/* sec2 */}
-      <div className="flex justify-center flex-col items-center">
+      <div className="flex flex-col items-center justify-center">
         {/* row1 */}
-        <div className=" flex justify-evenly flex-col md:flex-row items-center">
-          <div className="cursor-pointer hover:bg-blue2 hover:-translate-y-0.5 transition-all duration-300 ease-in-out group w-11/12 mb-6 md:w-2/5 p-12 flex bg-black3 rounded-md">
+        <div className=" flex flex-col items-center justify-evenly md:flex-row">
+          <div className="group mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12 shadow-lg shadow-slate-700 transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 md:w-2/5">
             {/* icon  */}
             <div>
-              <GiShoppingBag className="group-hover:text-textwhite mr-6 text-5xl text-textblue" />
+              <GiShoppingBag className="mr-6 text-5xl text-textblue group-hover:text-textwhite" />
             </div>
             {/* desc  */}
             <div className="flex flex-col">
-              <span className="text-xl font-medium pb-4 text-textwhite">
+              <span className="pb-4 text-xl font-medium text-textwhite">
                 E-commerce Website
               </span>
-              <span className="leading-7 group-hover:text-textwhite text-textgrey">
+              <span className="leading-7 text-textgrey group-hover:text-textwhite">
                 I created this e-commerce website with React and Strapi CMS.
               </span>
             </div>
           </div>
-          <div className="cursor-pointer hover:bg-blue2 hover:-translate-y-0.5 transition-all duration-300 ease-in-out  w-11/12 mb-6  md:w-2/5  p-12 flex group bg-black3 rounded-md">
+          <div className=" group mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12  shadow-lg shadow-slate-700  transition-all  duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 md:w-2/5">
             {/* icon  */}
             <div>
-              <BiSolidCameraMovie className="mr-6 text-5xl group-hover:text-textwhite text-textblue" />
+              <BiSolidCameraMovie className="mr-6 text-5xl text-textblue group-hover:text-textwhite" />
             </div>
             {/* desc  */}
             <div className="flex flex-col">
-              <span className="text-xl font-medium pb-4 text-textwhite">
+              <span className="pb-4 text-xl font-medium text-textwhite">
                 Movie Database
               </span>
-              <span className="leading-7 group-hover:text-textwhite text-textgrey">
+              <span className="leading-7 text-textgrey group-hover:text-textwhite">
                 I created this movie database website using React and the TMDB
                 API.
               </span>
@@ -57,33 +57,33 @@ function Projects() {
           </div>
         </div>
         {/* row2 */}
-        <div className="flex justify-evenly flex-col md:flex-row items-center">
-          <div className="cursor-pointer hover:bg-blue2 hover:-translate-y-0.5 transition-all duration-300 ease-in-out  w-11/12 mb-6  md:w-2/5  p-12 flex group bg-black3 rounded-md">
+        <div className="flex flex-col items-center justify-evenly md:flex-row">
+          <div className=" group mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12  shadow-lg shadow-slate-700  transition-all  duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 md:w-2/5">
             {/* icon  */}
             <div>
-              <FaUser className="mr-6 text-5xl group-hover:text-textwhite text-textblue" />
+              <FaUser className="mr-6 text-5xl text-textblue group-hover:text-textwhite" />
             </div>
             {/* desc  */}
             <div className="flex flex-col">
-              <span className="text-xl font-medium pb-4 text-textwhite">
+              <span className="pb-4 text-xl font-medium text-textwhite">
                 Portfolio
               </span>
-              <span className="leading-7 group-hover:text-textwhite text-textgrey">
+              <span className="leading-7 text-textgrey group-hover:text-textwhite">
                 I have implemented the designs of this website using React.
               </span>
             </div>
           </div>
-          <div className="cursor-pointer hover:bg-blue2 hover:-translate-y-0.5 transition-all duration-300 ease-in-out  w-11/12 mb-6  md:w-2/5  p-12 flex group bg-black3 rounded-md">
+          <div className="group mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12  shadow-lg shadow-slate-700  transition-all  duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 md:w-2/5">
             {/* icon  */}
             <div>
-              <LuListTodo className="mr-6 text-5xl group-hover:text-textwhite text-textblue" />
+              <LuListTodo className="mr-6 text-5xl text-textblue group-hover:text-textwhite" />
             </div>
             {/* desc  */}
             <div className="flex flex-col">
-              <span className="text-xl font-medium pb-4 text-textwhite">
+              <span className="pb-4 text-xl font-medium text-textwhite">
                 Todo App
               </span>
-              <span className="leading-7 group-hover:text-textwhite text-textgrey">
+              <span className="leading-7 text-textgrey group-hover:text-textwhite">
                 This is a straightforward todo app built with React.
               </span>
             </div>
