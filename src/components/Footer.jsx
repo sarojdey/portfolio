@@ -28,7 +28,7 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className="absolute h-h2 w-full overflow-hidden bg-blue2 md:-top-20 md:h-h1 md:rounded-r-xl">
+          <div className="absolute h-h2 w-full overflow-hidden bg-blue2  md:h-h1 ">
             <img className="h-full w-full object-cover" src={bg} alt="bg" />
           </div>
         </div>
