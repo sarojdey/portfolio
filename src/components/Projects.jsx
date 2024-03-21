@@ -29,7 +29,7 @@ function Projects() {
             onClick={() => {
               window.location.href = "https://anikart.vercel.app/";
             }}
-            className=" group relative mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12 shadow-lg shadow-slate-700 transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 md:w-2/5"
+            className=" group relative mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12 shadow-lg shadow-slate-700 transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 hover:shadow-none md:w-2/5"
           >
             {/* icon  */}
             <FaGithub
@@ -57,7 +57,7 @@ function Projects() {
             onClick={() => {
               window.location.href = "https://filmfusion-three.vercel.app/";
             }}
-            className=" group relative mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12  shadow-lg shadow-slate-700  transition-all  duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 md:w-2/5"
+            className=" group relative mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12  shadow-lg shadow-slate-700 transition-all  duration-300  ease-in-out hover:-translate-y-0.5 hover:bg-blue2 hover:shadow-none md:w-2/5"
           >
             {/* icon  */}
             <FaGithub
@@ -88,7 +88,7 @@ function Projects() {
             onClick={() => {
               window.location.href = "https://sarojkumardey.vercel.app/";
             }}
-            className=" group relative mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12  shadow-lg shadow-slate-700  transition-all  duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 md:w-2/5"
+            className=" group relative mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12  shadow-lg shadow-slate-700 transition-all  duration-300  ease-in-out hover:-translate-y-0.5 hover:bg-blue2 hover:shadow-none md:w-2/5"
           >
             {/* icon  */}
             <FaGithub
@@ -115,7 +115,7 @@ function Projects() {
             onClick={() => {
               window.location.href = "https://sarojdey.github.io/trip-monkey/";
             }}
-            className="group relative mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12  shadow-lg shadow-slate-700  transition-all  duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 md:w-2/5"
+            className="group relative mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12  shadow-lg shadow-slate-700 transition-all   duration-300  ease-in-out hover:-translate-y-0.5 hover:bg-blue2 hover:shadow-none md:w-2/5"
           >
             {/* icon  */}
             <FaGithub
