@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="overflow-hidden">
       <div className="flex flex-col md:flex-row">
-        <div className="relative h-h2 w-full md:w-1/2">
+        <div className="relative h-h2 w-full overflow-hidden md:w-1/2">
           <div className="absolute z-10 flex h-h2 w-full flex-col items-center justify-center">
             <div className="flex h-2/3 w-2/3 flex-col">
               <span className="text-md pb-6 font-font2 font-medium tracking-widest">
@@ -28,7 +28,7 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className="absolute h-h2 w-full overflow-hidden bg-blue2  md:h-h1 ">
+          <div className=" h-h2 w-full overflow-hidden bg-blue2  md:h-h1 ">
             <img className="h-full w-full object-cover" src={bg} alt="bg" />
           </div>
         </div>
