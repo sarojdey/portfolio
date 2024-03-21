@@ -1,5 +1,5 @@
 import { IoMenu } from "react-icons/io5";
-
+import { Link } from "react-scroll";
 function Navbar() {
   return (
     <header className="flex items-center justify-between ">
@@ -9,18 +9,17 @@ function Navbar() {
 
       <nav className="mr-4 mt-3 font-font2 font-medium md:mr-10 md:mt-6 ">
         <ul className="flex list-none items-center ">
-          <a
-            href="#about"
-            className="mx-6 hidden cursor-pointer transition-all duration-300 ease-in-out hover:text-blue2 md:block"
-          >
-            About
-          </a>
-          <a
-            href="#projects"
-            className=" mx-6 hidden cursor-pointer transition-all duration-300 ease-in-out hover:text-blue2 md:block"
-          >
-            Projects
-          </a>
+          <li className="mx-6 hidden cursor-pointer transition-all duration-300 ease-in-out hover:text-blue2 md:block">
+            <Link to="about" smooth duration={300}>
+              About
+            </Link>
+          </li>
+
+          <li className=" mx-6 hidden cursor-pointer transition-all duration-300 ease-in-out hover:text-blue2 md:block">
+            <Link to="projects" smooth duration={300}>
+              Projects
+            </Link>
+          </li>
           <a
             href=""
             className="mx-6 hidden cursor-pointer transition-all  duration-300 ease-in-out hover:text-blue2 md:block"

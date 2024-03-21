@@ -1,14 +1,14 @@
 import React from "react";
-
 import bg from "../assets/bg.jpg";
 import { FiExternalLink } from "react-icons/fi";
+import { Link } from "react-scroll";
 
 function Footer() {
   return (
     <div className="overflow-hidden">
       <div className="flex flex-col md:flex-row">
         <div className="relative h-h2 w-full md:w-1/2">
-          <div className="absolute z-10 flex h-h2 w-full flex-col items-center justify-center">
+          <div className="absolute z-10 flex h-h1 w-full flex-col items-center justify-center">
             <div className="flex h-2/3 w-2/3 flex-col">
               <span className="text-md pb-6 font-font2 font-medium tracking-widest">
                 READY TO DO THIS
@@ -39,20 +39,18 @@ function Footer() {
                 <span className="text-lg font-bold">Quick Link</span>
               </div>
               <div className="pb-2">
-                <a
-                  href="#about"
-                  className="cursor-pointer font-medium hover:text-textblue"
-                >
-                  About
-                </a>
+                <span className="cursor-pointer font-medium hover:text-textblue">
+                  <Link to="about" smooth duration={300}>
+                    About
+                  </Link>
+                </span>
               </div>
               <div className="pb-2">
-                <a
-                  href="#projects"
-                  className="cursor-pointer font-medium hover:text-textblue"
-                >
-                  Projects
-                </a>
+                <span className="cursor-pointer font-medium hover:text-textblue">
+                  <Link to="projects" smooth duration={300}>
+                    Projects
+                  </Link>
+                </span>
               </div>
               <div className="pb-2">
                 <a className="cursor-pointer font-medium hover:text-textblue">

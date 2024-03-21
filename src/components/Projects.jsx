@@ -11,7 +11,7 @@ function Projects() {
     <div className="py-20">
       {/* sec1 */}
       <div className="flex flex-col items-center p-5">
-        <span className=" pb-6 text-center text-textblue" id="projects">
+        <span className=" pb-6 text-center text-textblue" name="projects">
           MY BEST WORKS
         </span>
         <span className=" pb-6 text-center font-font1 text-4xl font-bold leading-10 text-textwhite">
