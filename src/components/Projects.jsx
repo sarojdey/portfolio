@@ -3,6 +3,7 @@ import { GiShoppingBag } from "react-icons/gi";
 import { BiSolidCameraMovie } from "react-icons/bi";
 import { FaUser } from "react-icons/fa";
 import { LuListTodo } from "react-icons/lu";
+import { FaGithub } from "react-icons/fa";
 
 function Projects() {
   return (
@@ -24,8 +25,21 @@ function Projects() {
       <div className="flex flex-col items-center justify-center">
         {/* row1 */}
         <div className=" flex flex-col items-center justify-evenly md:flex-row">
-          <div className="group mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12 shadow-lg shadow-slate-700 transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 md:w-2/5">
+          <div
+            onClick={() => {
+              window.location.href = "https://anikart.vercel.app/";
+            }}
+            className=" group relative mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12 shadow-lg shadow-slate-700 transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 md:w-2/5"
+          >
             {/* icon  */}
+            <FaGithub
+              onClick={(e) => {
+                e.stopPropagation();
+                window.location.href = "https://github.com/sarojdey/anikart";
+              }}
+              className="absolute right-4 top-4 text-2xl text-textgrey group-hover:text-textwhite "
+            ></FaGithub>
+
             <div>
               <GiShoppingBag className="mr-6 text-5xl text-textblue group-hover:text-textwhite" />
             </div>
@@ -39,8 +53,20 @@ function Projects() {
               </span>
             </div>
           </div>
-          <div className=" group mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12  shadow-lg shadow-slate-700  transition-all  duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 md:w-2/5">
+          <div
+            onClick={() => {
+              window.location.href = "https://filmfusion-three.vercel.app/";
+            }}
+            className=" group relative mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12  shadow-lg shadow-slate-700  transition-all  duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 md:w-2/5"
+          >
             {/* icon  */}
+            <FaGithub
+              onClick={(e) => {
+                e.stopPropagation();
+                window.location.href = "https://github.com/sarojdey/filmfusion";
+              }}
+              className="absolute right-4 top-4 text-2xl text-textgrey group-hover:text-textwhite "
+            ></FaGithub>
             <div>
               <BiSolidCameraMovie className="mr-6 text-5xl text-textblue group-hover:text-textwhite" />
             </div>
@@ -58,8 +84,20 @@ function Projects() {
         </div>
         {/* row2 */}
         <div className="flex flex-col items-center justify-evenly md:flex-row">
-          <div className=" group mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12  shadow-lg shadow-slate-700  transition-all  duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 md:w-2/5">
+          <div
+            onClick={() => {
+              window.location.href = "https://sarojkumardey.vercel.app/";
+            }}
+            className=" group relative mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12  shadow-lg shadow-slate-700  transition-all  duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 md:w-2/5"
+          >
             {/* icon  */}
+            <FaGithub
+              onClick={(e) => {
+                e.stopPropagation();
+                window.location.href = "https://github.com/sarojdey/portfolio";
+              }}
+              className="absolute right-4 top-4 text-2xl text-textgrey group-hover:text-textwhite "
+            ></FaGithub>
             <div>
               <FaUser className="mr-6 text-5xl text-textblue group-hover:text-textwhite" />
             </div>
@@ -73,8 +111,21 @@ function Projects() {
               </span>
             </div>
           </div>
-          <div className="group mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12  shadow-lg shadow-slate-700  transition-all  duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 md:w-2/5">
+          <div
+            onClick={() => {
+              window.location.href = "https://sarojdey.github.io/trip-monkey/";
+            }}
+            className="group relative mb-6 flex w-11/12 cursor-pointer rounded-md bg-black3 p-12  shadow-lg shadow-slate-700  transition-all  duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-blue2 md:w-2/5"
+          >
             {/* icon  */}
+            <FaGithub
+              onClick={(e) => {
+                e.stopPropagation();
+                window.location.href =
+                  "https://github.com/sarojdey/trip-monkey";
+              }}
+              className="absolute right-4 top-4 text-2xl text-textgrey group-hover:text-textwhite "
+            ></FaGithub>
             <div>
               <LuListTodo className="mr-6 text-5xl text-textblue group-hover:text-textwhite" />
             </div>
