@@ -27,6 +27,7 @@ function Home() {
       window.removeEventListener("scroll", control);
     };
   }, [lastScrollY]);
+
   return (
     <div className="scroll-smooth">
       <Navbar />
