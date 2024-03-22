@@ -62,20 +62,35 @@ function Footer() {
               <div className="pb-4">
                 <span className="text-lg font-bold">Socials</span>
               </div>
-              <div className="flex items-center justify-center pb-2 hover:text-textblue">
-                <a href="" className="cursor-pointer pr-1 font-medium ">
+              <div className="flex items-center  pb-2 hover:text-textblue">
+                <a
+                  href="https://www.linkedin.com/in/saroj-kumar-dey-bb2429265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer pr-1 font-medium "
+                >
                   LinkdIn
                 </a>
                 <FiExternalLink />
               </div>
-              <div className="flex items-center justify-center pb-2 hover:text-textblue">
-                <a href="" className="cursor-pointer pr-1 font-medium ">
+              <div className="flex items-center  pb-2 hover:text-textblue">
+                <a
+                  href="https://github.com/sarojdey"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer pr-1 font-medium "
+                >
                   Github
                 </a>
                 <FiExternalLink />
               </div>
-              <div className="flex items-center justify-center pb-2 hover:text-textblue">
-                <a href="" className="cursor-pointer pr-1 font-medium ">
+              <div className="flex items-center  pb-2 hover:text-textblue">
+                <a
+                  href="https://x.com/SarojKumarDey?t=ROX_PKQGbb3lZTepZB5_nQ&s=09"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer pr-1 font-medium "
+                >
                   X
                 </a>
                 <FiExternalLink />
