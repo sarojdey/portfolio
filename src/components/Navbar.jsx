@@ -49,21 +49,41 @@ function Navbar() {
         {cross ? (
           <div className=" absolute -bottom-40 right-2 flex cursor-pointer  flex-col justify-center rounded-md border-2 border-solid border-white bg-black bg-opacity-10 px-5 py-2 transition-transform md:hidden ">
             <span className="pb-2 hover:text-textblue">
-              <Link to="about" smooth duration={300}>
+              <Link
+                onClick={() => setCross(false)}
+                to="about"
+                smooth
+                duration={300}
+              >
                 About
               </Link>
             </span>
             <span className="pb-2 hover:text-textblue">
-              <Link to="projects" smooth duration={300}>
+              <Link
+                onClick={() => setCross(false)}
+                to="projects"
+                smooth
+                duration={300}
+              >
                 Projects
               </Link>
             </span>
             <span className="pb-2 hover:text-textblue">
-              <Link to="about" smooth duration={300}>
-                About
+              <Link
+                onClick={() => setCross(false)}
+                to="socials"
+                smooth
+                duration={300}
+              >
+                Socials
               </Link>
             </span>
-            <span className="pb-2 hover:text-textblue">Blogs</span>
+            <span
+              onClick={() => setCross(false)}
+              className="pb-2 hover:text-textblue"
+            >
+              Blogs
+            </span>
           </div>
         ) : (
           ""

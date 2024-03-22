@@ -60,7 +60,9 @@ function Footer() {
             </div>
             <div className="flex h-full  w-1/2 flex-col justify-center p-10">
               <div className="pb-4">
-                <span className="text-lg font-bold">Socials</span>
+                <span name="socials" className="text-lg font-bold">
+                  Socials
+                </span>
               </div>
               <div className="flex items-center  pb-2 hover:text-textblue">
                 <a
