@@ -14,7 +14,7 @@ function AboutMe() {
             ABOUT ME
           </span>
           <span className="pb-6 font-font1 text-4xl font-bold leading-10 text-textwhite">
-            Hey there! I'm Saroj, a passionate web developer.
+            Hi!! I'm Saroj, a passionate web developer.
           </span>
           <span className="pb-6 leading-7 text-textgrey">
             I have a grasp of various web frameworks like React, Node, Express,

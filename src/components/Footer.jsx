@@ -36,7 +36,7 @@ function Footer() {
           <div className="flex h-4/5">
             <div className="flex h-full w-full flex-col justify-center p-10">
               <div className="pb-4">
-                <span className="text-lg font-bold">Quick Link</span>
+                <span className="text-lg font-bold">Quick Links</span>
               </div>
               <div className="pb-2">
                 <span className="cursor-pointer font-medium hover:text-textblue">
