@@ -40,6 +40,39 @@
   --animate-pulse-line: pulse-line 2s ease-in-out infinite;
 }
 
+/* ── LIGHT MODE OVERRIDES ──────────────────────── */
+
+html.light {
+  /* Backgrounds */
+  --color-bg-primary: #f5f5f0;
+  --color-bg-secondary: #eaeae5;
+  --color-bg-tertiary: #e0e0db;
+  --color-bg-card: #ffffff;
+  --color-bg-card-hover: #f8f8f3;
+
+  /* Chrome (inverted for contrast on light bg) */
+  --color-chrome-100: #1a1a1a;
+  --color-chrome-200: #2d2d2d;
+  --color-chrome-300: #404040;
+  --color-chrome-400: #555555;
+  --color-chrome-500: #6b6b6b;
+  --color-chrome-600: #858585;
+  --color-chrome-700: #a3a3a3;
+  --color-chrome-800: #c4c4c4;
+
+  /* Text */
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #3a3a3a;
+  --color-text-muted: #606060;
+  --color-text-dim: #8a8a8a;
+
+  /* Borders */
+  --color-border-subtle: #d8d8d3;
+  --color-border-chrome: #c8c8c3;
+  --color-border-hover: #b0b0ab;
+  --color-border-active: #909090;
+}
+
 /* ── BASE ───────────────────────────────────────── */
 
 *,
@@ -61,6 +94,9 @@ body {
   background: var(--color-bg-primary);
   color: var(--color-text-primary);
   line-height: 1.7;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
 }
 
 ::selection {
@@ -150,6 +186,24 @@ body {
   );
 }
 
+html.light .glass-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+html.light .glass-card:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
 .chrome-gradient {
   background: linear-gradient(
     135deg,
@@ -224,4 +278,50 @@ body {
     linear-gradient(var(--color-border-subtle) 1px, transparent 1px),
     linear-gradient(90deg, var(--color-border-subtle) 1px, transparent 1px);
   background-size: 60px 60px;
+}
+
+/* ── THEME TOGGLE ──────────────────────────────── */
+
+.theme-toggle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--color-chrome-400);
+  transition: color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--color-chrome-200);
+}
+
+.theme-toggle svg {
+  position: absolute;
+  inset: 0;
+  transition:
+    transform 0.35s ease,
+    opacity 0.25s ease;
+}
+
+.theme-toggle .icon-sun {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+.theme-toggle .icon-moon {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.5);
+}
+
+html.light .theme-toggle .icon-sun {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
+}
+
+html.light .theme-toggle .icon-moon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
 }

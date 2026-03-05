@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Terminal, Menu, X } from "lucide-react";
+import { Terminal, Menu, X, Sun, Moon } from "lucide-react";
+import { useTheme } from "../context/ThemeContext";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
@@ -12,6 +13,7 @@ const NAV_LINKS = [
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -42,7 +44,7 @@ function Navbar() {
           </span>
         </a>
 
-        {/* Desktop Links */}
+        {/* Desktop Links + Toggle */}
         <div className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map((link) => (
             <a
@@ -53,16 +55,36 @@ function Navbar() {
               {link.label}
             </a>
           ))}
+
+          {/* Theme Toggle */}
+          <button
+            onClick={toggleTheme}
+            className="theme-toggle"
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+          >
+            <Sun size={18} className="icon-sun" />
+            <Moon size={18} className="icon-moon" />
+          </button>
         </div>
 
-        {/* Mobile Toggle */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden text-chrome-400 bg-transparent border-none cursor-pointer p-1"
-          aria-label="Toggle menu"
-        >
-          {mobileOpen ? <X size={20} /> : <Menu size={20} />}
-        </button>
+        {/* Mobile: Toggle + Hamburger */}
+        <div className="flex md:hidden items-center gap-3">
+          <button
+            onClick={toggleTheme}
+            className="theme-toggle"
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+          >
+            <Sun size={18} className="icon-sun" />
+            <Moon size={18} className="icon-moon" />
+          </button>
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="md:hidden text-chrome-400 bg-transparent border-none cursor-pointer p-1"
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}

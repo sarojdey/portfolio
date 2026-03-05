@@ -12,7 +12,7 @@ function Hero() {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         {/* Status badge */}
         <div
-          className="inline-flex items-center gap-2 px-4 py-1.5 mb-8 border border-border-chrome rounded-sm text-xs tracking-widest uppercase text-text-muted backdrop-blur-md bg-white/5"
+          className="inline-flex items-center gap-2 px-4 py-1.5 mb-8 border border-border-chrome rounded-sm text-xs tracking-widest uppercase text-text-muted backdrop-blur-xl bg-bg-primary/40"
           style={{ animation: "fade-in 0.6s ease-out both" }}
         >
           <span className="w-1.5 h-1.5 rounded-full bg-chrome-400 animate-pulse" />
@@ -21,7 +21,7 @@ function Hero() {
 
         {/* Name */}
         <h1
-          className="text-4xl sm:text-5xl md:text-6xl font-bold leading-none mb-4"
+          className="text-4xl sm:text-5xl md:text-6xl font-bold  leading-none mb-4"
           style={{
             animation: "slide-up 0.6s ease-out 0.1s both",
             fontFamily: "var(--font-heading)",
@@ -67,7 +67,7 @@ function Hero() {
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 px-6 py-3 border border-border-chrome text-text-secondary text-xs font-medium tracking-widest uppercase no-underline transition-all duration-200 hover:border-chrome-500 hover:text-text-primary backdrop-blur-md bg-white/5"
+            className="inline-flex items-center gap-2 px-6 py-3 border border-border-chrome text-text-secondary text-xs font-medium tracking-widest uppercase no-underline transition-all duration-200 hover:border-chrome-500 hover:text-text-primary backdrop-blur-xl bg-bg-primary/40"
           >
             Get in Touch
           </a>
