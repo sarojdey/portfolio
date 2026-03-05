@@ -1,0 +1,227 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-heading: "Space Grotesk", system-ui, sans-serif;
+
+  /* Backgrounds */
+  --color-bg-primary: #121212;
+  --color-bg-secondary: #181818;
+  --color-bg-tertiary: #1f1f1f;
+  --color-bg-card: #161616;
+  --color-bg-card-hover: #1e1e1e;
+
+  /* Chrome / Metallic */
+  --color-chrome-100: #e8e8e8;
+  --color-chrome-200: #d4d4d4;
+  --color-chrome-300: #c0c0c0;
+  --color-chrome-400: #a3a3a3;
+  --color-chrome-500: #8a8a8a;
+  --color-chrome-600: #6b6b6b;
+  --color-chrome-700: #4a4a4a;
+  --color-chrome-800: #333333;
+
+  /* Text */
+  --color-text-primary: #f8f8f8;
+  --color-text-secondary: #c8c8c8;
+  --color-text-muted: #929292;
+  --color-text-dim: #6e6e6e;
+
+  /* Borders */
+  --color-border-subtle: #252525;
+  --color-border-chrome: #303030;
+  --color-border-hover: #424242;
+  --color-border-active: #606060;
+
+  /* Animations */
+  --animate-fade-in: fade-in 0.6s ease-out both;
+  --animate-slide-up: slide-up 0.6s ease-out both;
+  --animate-shimmer: shimmer 3s linear infinite;
+  --animate-pulse-line: pulse-line 2s ease-in-out infinite;
+}
+
+/* ── BASE ───────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  line-height: 1.7;
+}
+
+::selection {
+  background: var(--color-chrome-700);
+  color: var(--color-chrome-100);
+}
+
+/* ── SCROLLBAR ──────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-chrome-800);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-chrome-700);
+}
+
+/* ── KEYFRAMES ──────────────────────────────────── */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulse-line {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* ── UTILITY CLASSES ────────────────────────────── */
+
+.glass-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
+  border: 1px solid var(--color-border-chrome);
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: var(--color-border-hover);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+}
+
+.chrome-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--color-chrome-800) 0%,
+    var(--color-chrome-600) 50%,
+    var(--color-chrome-800) 100%
+  );
+  background-size: 200% 200%;
+}
+
+.chrome-text {
+  background: linear-gradient(
+    135deg,
+    var(--color-chrome-300) 0%,
+    var(--color-chrome-100) 40%,
+    var(--color-chrome-400) 60%,
+    var(--color-chrome-200) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.chrome-border-glow {
+  position: relative;
+}
+
+.chrome-border-glow::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    var(--color-chrome-700) 50%,
+    transparent 100%
+  );
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.chrome-border-glow:hover::after {
+  opacity: 1;
+}
+
+.shimmer-line {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-chrome-600) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: var(--animate-shimmer);
+}
+
+.section-padding {
+  padding: 6rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 8rem 2rem;
+  }
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(var(--color-border-subtle) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-border-subtle) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
