@@ -13,7 +13,7 @@ function Hero() {
 
         {/* Name */}
         <h1
-          className="text-4xl sm:text-5xl md:text-6xl font-bold leading-none mb-4"
+          className="text-3xl sm:text-5xl md:text-6xl font-bold leading-none mb-4"
           style={{
             animation: "slide-up 0.6s ease-out 0.1s both",
             fontFamily: "var(--font-heading)",
@@ -61,7 +61,7 @@ function Hero() {
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 px-6 py-3 border border-border-chrome text-text-secondary text-xs font-medium tracking-widest uppercase no-underline transition-all duration-200 hover:border-chrome-500 hover:text-text-primary backdrop-blur-xl bg-bg-primary/40 rounded-md"
+            className="inline-flex items-center gap-2 px-6 py-3 border border-border-chrome text-text-secondary text-xs font-medium tracking-widest uppercase no-underline transition-all duration-200 hover:bg-chrome-400 hover:text-bg-primary no-underline rounded-md"
           >
             Get in Touch
           </a>
