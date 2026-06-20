@@ -24,7 +24,7 @@ function Hero() {
 
         {/* Title */}
         <p
-          className="text-base sm:text-lg tracking-[0.2em] uppercase text-chrome-400 mb-6 font-light"
+          className="text-base sm:text-lg tracking-[0.2em] uppercase text-chrome-400 mb-4 sm:mb-6 font-light"
           style={{
             fontFamily: "var(--font-heading)",
             animation: "slide-up 0.6s ease-out 0.3s both",
@@ -61,7 +61,7 @@ function Hero() {
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 px-6 py-3 border border-border-chrome text-text-secondary text-xs font-medium tracking-widest uppercase no-underline transition-all duration-200 hover:bg-chrome-400 hover:text-bg-primary no-underline rounded-md"
+            className="inline-flex items-center gap-2 px-6 py-3 border border-border-chrome text-text-secondary text-xs font-medium tracking-widest uppercase no-underline transition-all duration-200 hover:border-chrome-500 hover:text-text-primary backdrop-blur-xl bg-bg-primary/40 rounded-md"
           >
             Get in Touch
           </a>
