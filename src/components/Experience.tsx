@@ -78,7 +78,7 @@ function Experience() {
                     <span className="text-xs text-chrome-400">
                       {entry.company}
                     </span>
-                    <span className="flex items-center gap-1 text-[11px] text-text-dim">
+                    <span className="flex items-center gap-1 text-[0.72rem] text-text-dim">
                       <Calendar size={11} />
                       {entry.period}
                     </span>
@@ -87,7 +87,7 @@ function Experience() {
                     {entry.points.map((point, j) => (
                       <li
                         key={j}
-                        className="text-[12px] text-text-muted leading-[1.8] pl-4 relative before:content-[''] before:absolute before:left-0 before:top-2.25 before:w-1.5 before:h-px before:bg-chrome-700"
+                        className="text-[0.78rem] text-text-muted leading-[1.8] pl-4 relative before:content-[''] before:absolute before:left-0 before:top-2.25 before:w-1.5 before:h-px before:bg-chrome-700"
                       >
                         {point}
                       </li>

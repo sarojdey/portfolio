@@ -82,6 +82,7 @@ html.light {
 }
 
 html {
+  font-size: 17px;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -173,6 +174,7 @@ body {
     rgba(255, 255, 255, 0.01) 100%
   );
   border: 1px solid var(--color-border-chrome);
+  border-radius: 0.5rem;
   backdrop-filter: blur(12px);
   transition: all 0.3s ease;
 }
@@ -201,6 +203,24 @@ html.light .glass-card:hover {
     rgba(255, 255, 255, 0.9) 0%,
     rgba(255, 255, 255, 0.6) 100%
   );
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.btn-primary {
+  background-color: var(--color-chrome-100);
+  color: var(--color-bg-primary);
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-white);
+  color: var(--color-bg-primary);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+html.light .btn-primary:hover {
+  background-color: var(--color-chrome-200);
+  color: var(--color-bg-primary);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
@@ -264,7 +284,7 @@ html.light .glass-card:hover {
 }
 
 .section-padding {
-  padding: 6rem 1.5rem;
+  padding: 3rem 1.25rem;
 }
 
 @media (min-width: 768px) {
@@ -275,9 +295,15 @@ html.light .glass-card:hover {
 
 .grid-bg {
   background-image:
-    linear-gradient(var(--color-border-subtle) 1px, transparent 1px),
-    linear-gradient(90deg, var(--color-border-subtle) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-size: 60px 60px;
+}
+
+html.light .grid-bg {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
 }
 
 /* ── THEME TOGGLE ──────────────────────────────── */

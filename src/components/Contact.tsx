@@ -35,7 +35,7 @@ function Contact() {
   };
 
   const inputClasses =
-    "w-full bg-[var(--color-bg-primary)] border border-[var(--color-border-chrome)] px-4 py-3 text-xs text-[var(--color-text-primary)] tracking-wide placeholder:text-[var(--color-text-dim)] focus:outline-none focus:border-[var(--color-chrome-500)] transition-colors duration-200 rounded-[2px] font-[var(--font-mono)]";
+    "w-full bg-[var(--color-bg-primary)] border border-[var(--color-border-chrome)] px-4 py-3 text-xs text-[var(--color-text-primary)] tracking-wide placeholder:text-[var(--color-text-dim)] focus:outline-none focus:border-[var(--color-chrome-500)] transition-colors duration-200 rounded-md font-[var(--font-mono)]";
 
   return (
     <section id="contact" className="section-padding">
@@ -117,7 +117,7 @@ function Contact() {
             />
             <button
               type="submit"
-              className="group inline-flex items-center justify-center gap-2 px-6 py-3 bg-chrome-100 text-bg-primary text-xs font-semibold tracking-widest uppercase border-none cursor-pointer transition-all duration-200 hover:bg-white hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] rounded-xs"
+              className="btn-primary group inline-flex items-center justify-center gap-2 px-6 py-3 text-xs font-semibold tracking-widest uppercase border-none cursor-pointer rounded-md"
             >
               Send Message
               <Send

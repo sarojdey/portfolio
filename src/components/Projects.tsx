@@ -43,7 +43,7 @@ const PROJECT_DATA: Project[] = [
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="glass-card p-6 rounded-[3px] group flex flex-col h-full hover:-translate-y-0.5 transition-all duration-300">
+    <div className="glass-card p-6 group flex flex-col h-full hover:-translate-y-0.5 transition-all duration-300">
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
         <Folder
@@ -78,7 +78,7 @@ function ProjectCard({ project }: { project: Project }) {
       </h3>
 
       {/* Description */}
-      <p className="text-[12px] text-text-muted leading-[1.8] mb-4 flex-1">
+      <p className="text-[0.78rem] text-text-muted leading-[1.8] mb-4 flex-1">
         {project.description}
       </p>
 
@@ -87,7 +87,7 @@ function ProjectCard({ project }: { project: Project }) {
         {project.tech.map((t) => (
           <span
             key={t}
-            className="text-[10px] tracking-wider text-chrome-500 font-medium"
+            className="text-[0.66rem] tracking-wider text-chrome-500 font-medium"
           >
             {t}
           </span>

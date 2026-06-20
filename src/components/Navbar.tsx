@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Terminal, Menu, X, Sun, Moon } from "lucide-react";
+import { Terminal, Sun, Moon } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
 
 const NAV_LINKS = [
@@ -79,31 +79,47 @@ function Navbar() {
           </button>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden text-chrome-400 bg-transparent border-none cursor-pointer p-1"
+            className="md:hidden relative w-5 h-3.5 flex flex-col justify-between items-center focus:outline-none cursor-pointer border-none bg-transparent"
             aria-label="Toggle menu"
           >
-            {mobileOpen ? <X size={20} /> : <Menu size={20} />}
+            <span
+              className={`block absolute h-0.5 w-5 bg-chrome-400 transform transition-all duration-300 ease-in-out ${
+                mobileOpen ? "rotate-45 top-1.5" : "top-0"
+              }`}
+            />
+            <span
+              className={`block absolute h-0.5 w-5 bg-chrome-400 transform transition-all duration-300 ease-in-out top-1.5 ${
+                mobileOpen ? "opacity-0" : "opacity-100"
+              }`}
+            />
+            <span
+              className={`block absolute h-0.5 w-5 bg-chrome-400 transform transition-all duration-300 ease-in-out ${
+                mobileOpen ? "-rotate-45 top-1.5" : "top-3"
+              }`}
+            />
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      {mobileOpen && (
-        <div className="md:hidden bg-bg-secondary/95 backdrop-blur-md border-t border-border-subtle">
-          <div className="flex flex-col px-6 py-4 gap-4">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileOpen(false)}
-                className="text-xs tracking-widest uppercase text-text-muted hover:text-text-primary transition-colors no-underline"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
+      <div
+        className={`md:hidden bg-bg-secondary/95 backdrop-blur-md border-t border-border-subtle overflow-hidden transition-all duration-300 ease-in-out ${
+          mobileOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+        }`}
+      >
+        <div className="flex flex-col px-6 py-4 gap-4">
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setMobileOpen(false)}
+              className="text-xs tracking-widest uppercase text-text-muted hover:text-text-primary transition-colors no-underline"
+            >
+              {link.label}
+            </a>
+          ))}
         </div>
-      )}
+      </div>
     </nav>
   );
 }
